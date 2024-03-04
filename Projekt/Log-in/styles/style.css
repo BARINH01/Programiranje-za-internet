@@ -1,0 +1,82 @@
+.header {
+    padding: 5px;
+    text-align: left;
+    background: #6a6f6e;
+    color: white;
+    font-size: 10px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+}
+
+.sign-in-form{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    box-shadow: 0 0 3px 0 rgb(0, 0, 0);
+    background-color: rgb(59, 166, 193);
+    padding: 80px;
+    padding-bottom: 20px;
+    margin: 10% auto 0;
+    text-align: center;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    color: white;
+}
+h2{
+    font-size: 40px;
+}
+input{
+    width: 400px;
+    font-size: medium;
+    height: 25px;
+    padding: 10px;
+    border-radius: 7px;
+    margin-bottom: 5px;
+    background-color: antiquewhite;
+    outline: none !important;
+}
+input.invalid{
+    border: solid red 5px;
+}
+input.valid{
+    border: solid green 5px;
+}
+input + p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 10px;
+    margin-bottom: 5px;
+    color: red;
+    opacity: 0;
+    height: 0;
+}
+input.invalid + p{
+    opacity: 1;
+    height: auto;
+    margin-bottom: 15px;
+}
+input.submit{
+    border-radius: 6px;
+    width: 100px;
+    height: 40px;
+    margin-top: 10px;    
+}
+@media screen and (max-width: 750px){
+    body{
+        width: 75%;
+    }
+    .header{
+        width: 200%;
+    }
+    .sign-in-form, input, input + p{
+        width: 100%;
+        font: small;
+    }
+}

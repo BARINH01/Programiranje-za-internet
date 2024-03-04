@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PTO Manager</title>
+        <link rel="stylesheet" type="text/css" href="./styles/style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="./styles/normalize.css" />
+
+</head>
+<body>
+    <header>
+        <h1>PTO Manager</h1>
+        <a href="file:///c%3A/Users/ibari/OneDrive%20-%20Fakultet%20elektrotehnike%2C%20strojarstva%20i%20brodogradnje/Projekt/Log-in/index.html">Sign out</a>
+    </header>
+    <div id="content-container">
+        <div id="user-container">
+            <label for="employee-select">Select an employee:</label><br>
+            <select name="employee" id="select-employee">
+                <option value="none">-</option>
+            </select>
+        </div>
+        <div id="pto-container">
+            <form id="add-pto-form">
+                <div class="form-input-container">
+                    <label for="start-date-input">Choose PTO start date:</label>
+                    <input id="start-date-input" type="date" name="start-date-input" />
+                </div>
+                <div class="form-input-container">
+                    <label for="end-date-input">Choose PTO end date:</label>
+                    <input id="end-date-input" type="date" name="end-date-input" />
+                </div>
+                <input type="submit" value="Submit PTO Request" id="submit-pto-button" name="submit" />
+            </form>
+        </div>
+    
+    </div>
+    <div id="user-data-container">
+    </div>        
+ 
+    <script src="scripts/script.js"></script>
+</body>
+</html>
