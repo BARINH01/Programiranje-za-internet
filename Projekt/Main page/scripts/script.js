@@ -1,4 +1,5 @@
 let selectedUserId = null;
+let selectedDate = null; // Variable to store the selected date
 
 // Reach the elements only after the document is loaded
 document.addEventListener("DOMContentLoaded", async function() {
@@ -245,12 +246,12 @@ function createPTOElement(startDate, endDate){
   <div class = "pto-request-info">
   <i class="fa fa-times x-icon"></i>
       <div class="pto-info">
-      <label>Start date</label>
-      <label class ="content">${startDate.toLocaleDateString("en-US", localesOptions)}</label>
+      <label>Start date: </label>
+      <label class ="content">${startDate.toLocaleDateString("hr-HR", localesOptions)}</label>
       </div>
       <div class="pto-info">
-      <label>End date</label>
-      <label class ="content">${endDate.toLocaleDateString("en-US", localesOptions)}</label>
+      <label>End date: </label>
+      <label class ="content">${endDate.toLocaleDateString("hr-HR", localesOptions)}</label>
       </div>
     </div>`
 
@@ -337,9 +338,8 @@ if(!pto){
 
   event.target.reset();
 }
-
 // Sign out button, clearing cookies
-document.getElementsByTagName('a').addEventListener("click", function(e){
+document.getElementById('sign-out').addEventListener("click", function(e){
 
   // Prevent the default action of the link
   e.preventDefault();
