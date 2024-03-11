@@ -328,17 +328,4 @@ select{
         flex-direction: column;
         font-size: 1em;
       }
-      #selected-start-date, #selected-end-date {
-        border-radius: 50%;
-        height: 40px;
-        width: 40px;
-        color: white;
-      }
-      #selected-start-date {
-        background-color: green;
-      }
-      
-      #selected-end-date {
-        background-color: tomato;
-      }
 }
