@@ -1,5 +1,5 @@
 # Programiranje-za-internet
-Projekt iz Programiranja za internet
+Projekt iz programiranja za internet
 
 Assignment
 
