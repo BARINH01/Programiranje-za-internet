@@ -350,5 +350,5 @@ document.getElementById('sign-out').addEventListener("click", function(e){
   });
 
   // Redirect to the login page // ovo je dodano naknadno, nakom što sam završio pisanje većine koda, misleći da će mi Sign out biti link, na kraju nije trebao biti, ali sam ga ostavio
-  window.location.href = "file:///c%3A/Users/ibari/OneDrive%20-%20Fakultet%20elektrotehnike%2C%20strojarstva%20i%20brodogradnje/Projekt/Log-in/index.html";
+  window.location.href = "../Log-in/index.html";
 });

@@ -54,7 +54,7 @@ if(validate){
                 alert("Please enter both email and password!");
                 return;
             }
-            window.location.href = "file:///c%3A/Users/ibari/OneDrive%20-%20Fakultet%20elektrotehnike%2C%20strojarstva%20i%20brodogradnje/Projekt/Main%20page/index.html"; 
+            window.location.href = "../Main page/index.html"; 
             
     }
 
