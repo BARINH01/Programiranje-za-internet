@@ -1,4 +1,12 @@
-confirm("Data unavailable for guests users. Please sign in to see data!");
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+import {
+    getAuth,
+    createUserWithEmailAndPassword,
+    signInWithEmailAndPassword,
+    onAuthStateChanged,
+    signOut
+} from "https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js";
+confirm("Data unavailable for guests users. Please log in to see data!");
 // regex validation
 
 const inputs = document.querySelectorAll('input');
@@ -54,7 +62,13 @@ if(validate){
                 alert("Please enter both email and password!");
                 return;
             }
-            window.location.href = "../Main page/index.html"; 
+            const userLogIn = async() => {
+                const signUpEmail = email;
+                const signUpPassword = password;
+                createUserWithEmailAndPassword(auth, signUpEmail, signUpPassword);
+            }
+            userSignUp();
+            //window.location.href = "../Main page/index.html"; 
             
     }
 

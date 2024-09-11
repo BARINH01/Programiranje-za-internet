@@ -301,7 +301,7 @@ select{
 #selected-end-date {
   background-color: tomato;
 }
-@media screen and (max-width: 900px){
+@media screen and (max-width: 900px) {
 
     header {
         flex-direction: column;
